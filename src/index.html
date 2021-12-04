@@ -18,8 +18,7 @@
     </div>
 
   <script>
-    
-      console.log("test");
+      window.addEventListener("click", () => {
         let add_element = () => {
           for (let i = 0; i < 5; i++){
             const template = document.createElement('div');
@@ -29,9 +28,8 @@
             document.body.appendChild(template);
           }
         }
-    
-
-    add_element();
+        add_element();
+      });
   </script>
   </body>
 </html>

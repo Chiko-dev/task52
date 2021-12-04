@@ -18,14 +18,18 @@
     </div>
 
   <script>
-    for (let i = 0; i < 5; i++){
+    
+      console.log("test");
         let add_element = () => {
+          for (let i = 0; i < 5; i++){
             const template = document.createElement('div');
+            template.classList.add("message");
             template.innerHTML = "Content inside DIV";
 
             document.body.appendChild(template);
+          }
         }
-    }
+    
 
     add_element();
   </script>
